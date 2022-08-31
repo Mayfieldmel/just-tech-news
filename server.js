@@ -9,6 +9,20 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+// express.js & sequelize session libraries
+const session = require('express-session');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+  // session object
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
+
 // handlebars.js template engine
 const exphbs = require('express-handlebars');
 const hbs = exphbs.create({});
@@ -17,6 +31,9 @@ const hbs = exphbs.create({});
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
+
+// session middleware
+app.use(session(sess));
 
 // handlebars.js middleware
 app.engine('handlebars', hbs.engine);
