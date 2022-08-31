@@ -67,11 +67,10 @@ Post.init(
 
 // //   posts:
 // //   [
-	// { 		
-	// 	"title": "Taskmaster goes public!",
-    //     "post_url": "https://taskmaster.com/press",
-	// 	"user_id": 3
-	// }
+// 	{ 		
+// 		"title": "Taskmaster goes public!",
+//    "post_url": "https://taskmaster.com/press",
+// 		"user_id": 3
 // // 	},
 	// {
 	// 	"title": "Runbuddy reaches 2 million subscribers",

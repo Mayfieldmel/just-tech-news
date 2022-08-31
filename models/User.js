@@ -64,19 +64,24 @@ module.exports = User;
 
 // users:
 // [
-//     {
-//     "username": "Lernantino", 
-//     "email": "lernantino@gmail.com", 
-//     "password": "password1234"
-//     },
-//     {
-//     "username": "MickeyMouse", 
-//     "email": "theMouse@disney.com", 
-//     "password": "cheese"
-//     },
-//     {
-//     "username": "DonaldDuck", 
-//     "email": "theDuck@disney.com", 
-//     "password": "quack"
-//     }
+    // {
+    // "username": "Lernantino", 
+    // "email": "lernantino@gmail.com", 
+    // "password": "password1234"
+    // },
+    // {
+    // "username": "MickeyMouse", 
+    // "email": "theMouse@disney.com", 
+    // "password": "cheese"
+    // },
+    // {
+    // "username": "DonaldDuck", 
+    // "email": "theDuck@disney.com", 
+    // "password": "quack"
+    // },
+  //   {
+  //     "username": "MinnieMouse", 
+  //     "email": "Mrs.Mouse@disney.com", 
+  //     "password": "MiniMinnie"
+  // }
 // ]
