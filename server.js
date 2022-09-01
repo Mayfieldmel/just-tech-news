@@ -23,9 +23,14 @@ const sess = {
   })
 };
 
+// formatting helpers
+const helpers = require('./utils/helpers');
+
 // handlebars.js template engine
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({});
+const hbs = exphbs.create({helpers});
+
+
 
 // express.js server middleware
 app.use(express.json());
